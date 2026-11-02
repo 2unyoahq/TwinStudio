@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#app {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body {
+  font-family:
+    Inter,
+    "Microsoft YaHei",
+    sans-serif;
+  background: #111827;
+  color: #e5e7eb;
+}
+
+button {
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: #e2e8f0;
+  padding: 7px 13px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+button:hover {
+  background: #334155;
+  border-color: #64748b;
+}
+
+button.active {
+  background: #2563eb;
+  border-color: #3b82f6;
+  color: #ffffff;
+}
+
+.studio {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background: #111827;
+}
+
+.toolbar {
+  height: 56px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 18px;
+  border-bottom: 1px solid #334155;
+  background: #172033;
+}
+
+.brand,
+.toolbar-actions,
+.toolbar-status {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.brand-icon {
+  width: 30px;
+  height: 30px;
+  display: grid;
+  place-items: center;
+  border-radius: 6px;
+  background: #2563eb;
+  font-weight: bold;
+}
+
+.brand strong {
+  display: block;
+  font-size: 14px;
+}
+
+.brand small {
+  display: block;
+  font-size: 10px;
+  color: #94a3b8;
+}
+
+.toolbar-status {
+  font-size: 11px;
+  color: #94a3b8;
+}
+
+.status-dot {
+  width: 7px;
+  height: 7px;
+  background: #22c55e;
+  border-radius: 50%;
+}
+
+.workspace {
+  display: flex;
+  flex: 1;
+  min-height: 0;
+}
+
+.side-panel {
+  width: 230px;
+  flex-shrink: 0;
+  padding: 15px;
+  border-right: 1px solid #334155;
+  background: #172033;
+  overflow-y: auto;
+}
+
+.inspector {
+  border-right: none;
+  border-left: 1px solid #334155;
+}
+
+.panel-title {
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.tree-item {
+  font-size: 12px;
+  padding: 9px 5px;
+  color: #cbd5e1;
+}
+
+.tree-item.child {
+  padding-left: 22px;
+  color: #94a3b8;
+}
+
+.panel-divider {
+  height: 1px;
+  background: #334155;
+  margin: 18px 0;
+}
+
+.empty-hint {
+  font-size: 11px;
+  line-height: 1.7;
+  color: #64748b;
+}
+
+.viewport-area {
+  flex: 1;
+  min-width: 0;
+  min-height: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.viewport-label {
+  position: absolute;
+  z-index: 2;
+  top: 14px;
+  left: 16px;
+  pointer-events: none;
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: #94a3b8;
+}
+
+.viewport-footer {
+  position: absolute;
+  bottom: 12px;
+  left: 14px;
+  right: 14px;
+  display: flex;
+  justify-content: space-between;
+  pointer-events: none;
+  font-size: 10px;
+  color: #94a3b8;
+}
+
+.selected-object,
+.property-value {
+  padding: 9px;
+  background: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 5px;
+  font-size: 12px;
+  margin-bottom: 14px;
+  overflow-wrap: anywhere;
+}
+
+.property-label {
+  font-size: 10px;
+  color: #94a3b8;
+  margin: 14px 0 7px;
+}
+
+.loading {
+  position: absolute;
+  z-index: 3;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 12px 20px;
+  background: #1e293b;
+  border-radius: 6px;
+  font-size: 12px;
+}
+
+.console {
+  height: 32px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 22px;
+  padding: 0 14px;
+  border-top: 1px solid #334155;
+  background: #172033;
+  color: #94a3b8;
+  font-size: 10px;
+}

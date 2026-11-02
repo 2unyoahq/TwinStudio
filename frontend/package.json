@@ -1,0 +1,26 @@
+{
+  "name": "twinstudio",
+  "private": true,
+  "version": "0.1.0",
+  "description": "TwinStudio digital twin editor",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit"
+  },
+  "dependencies": {
+    "three": "^0.186.1",
+    "vue": "^3.5.44"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.2",
+    "@types/three": "^0.186.0",
+    "@vitejs/plugin-vue": "^6.0.10",
+    "@vue/tsconfig": "^0.9.1",
+    "typescript": "^5.9.3",
+    "vite": "^8.3.5",
+    "vue-tsc": "^3.3.14"
+  }
+}
